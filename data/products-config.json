@@ -1,0 +1,117 @@
+{
+  "header": {
+    "topLeft": "TechStore",
+    "topMiddle": "Los mejores productos tecnológicos",
+    "topRight": "Soporte: +1234567890"
+  },
+  "navigation": {
+    "items": [
+      { "label": "Inicio", "href": "/" },
+      { "label": "Productos", "href": "/productos" },
+      { "label": "Servicios", "href": "/servicios" },
+      { "label": "Acerca de", "href": "/acerca" },
+      { "label": "Contacto", "href": "/contacto" }
+    ]
+  },
+  "productHero": {
+    "title": "Descubre Nuestros Productos",
+    "subtitle": "Tecnología de vanguardia para profesionales y entusiastas",
+    "backgroundImage": "/placeholder.svg?height=400&width=1200"
+  },
+  "categories": {
+    "title": "Categorías de Productos",
+    "items": [
+      {
+        "name": "Laptops",
+        "description": "Computadoras portátiles de alta gama",
+        "image": "/placeholder.svg?height=200&width=300",
+        "productCount": 25
+      },
+      {
+        "name": "Smartphones",
+        "description": "Teléfonos inteligentes última generación",
+        "image": "/placeholder.svg?height=200&width=300",
+        "productCount": 18
+      },
+      {
+        "name": "Accesorios",
+        "description": "Complementos y periféricos",
+        "image": "/placeholder.svg?height=200&width=300",
+        "productCount": 42
+      }
+    ]
+  },
+  "featuredProducts": {
+    "title": "Productos Destacados",
+    "products": [
+      {
+        "id": "1",
+        "name": "Laptop Pro X1",
+        "price": 1299,
+        "originalPrice": 1499,
+        "image": "/placeholder.svg?height=250&width=300",
+        "description": "Laptop profesional con procesador de última generación",
+        "badge": "Oferta"
+      },
+      {
+        "id": "2",
+        "name": "Smartphone Ultra",
+        "price": 899,
+        "image": "/placeholder.svg?height=250&width=300",
+        "description": "Teléfono con cámara profesional y 5G",
+        "badge": "Nuevo"
+      },
+      {
+        "id": "3",
+        "name": "Auriculares Premium",
+        "price": 299,
+        "image": "/placeholder.svg?height=250&width=300",
+        "description": "Auriculares con cancelación de ruido activa"
+      }
+    ]
+  },
+  "productGrid": {
+    "title": "Todos los Productos",
+    "showFilters": true,
+    "itemsPerRow": 4,
+    "products": [
+      {
+        "id": "4",
+        "name": "Tablet Pro",
+        "price": 599,
+        "image": "/placeholder.svg?height=200&width=250",
+        "category": "Tablets",
+        "rating": 4.5,
+        "inStock": true
+      },
+      {
+        "id": "5",
+        "name": "Mouse Gaming",
+        "price": 79,
+        "image": "/placeholder.svg?height=200&width=250",
+        "category": "Accesorios",
+        "rating": 4.8,
+        "inStock": true
+      }
+    ]
+  },
+  "specifications": {
+    "title": "¿Por qué elegir nuestros productos?",
+    "content": "Ofrecemos productos de la más alta calidad con garantía extendida y soporte técnico especializado.",
+    "features": [
+      "Garantía extendida de 2 años",
+      "Soporte técnico 24/7",
+      "Envío gratuito en compras mayores a $500",
+      "Devolución sin costo en 30 días",
+      "Productos certificados y originales"
+    ]
+  },
+  "generalSection": {
+    "title": "Compromiso con la Calidad",
+    "content": "En TechStore nos comprometemos a ofrecer solo productos de la más alta calidad, respaldados por las mejores marcas del mercado y nuestro servicio al cliente excepcional."
+  },
+  "footer": {
+    "leftContent": "© 2024 TechStore. Todos los derechos reservados.",
+    "rightContent": "Síguenos en redes sociales | Política de devoluciones"
+  }
+}

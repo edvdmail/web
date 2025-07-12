@@ -1,0 +1,40 @@
+{
+  "header": {
+    "topLeft": "Logo Empresa",
+    "topMiddle": "Bienvenidos a nuestro sitio",
+    "topRight": "Contacto: +1234567890"
+  },
+  "navigation": {
+    "items": [
+      { "label": "Inicio", "href": "/" },
+      { "label": "Productos", "href": "/productos" },
+      { "label": "Servicios", "href": "/servicios" },
+      { "label": "Acerca de", "href": "/acerca" },
+      { "label": "Contacto", "href": "/contacto" }
+    ]
+  },
+  "content": {
+    "leftWidth": 30,
+    "centerWidth": 70,
+    "leftContent": "Contenido del sidebar izquierdo con información adicional y enlaces útiles.",
+    "centerContent": "Contenido principal de la página con información detallada sobre nuestros productos y servicios."
+  },
+  "banner": {
+    "title": "Título Principal del Banner",
+    "subtitle": "Subtítulo descriptivo que explica más sobre la empresa",
+    "backgroundImage": "/placeholder.svg?height=300&width=1200"
+  },
+  "gallery": {
+    "leftContent": "Galería Izquierda - Productos destacados",
+    "centerContent": "Galería Central - Servicios principales",
+    "rightContent": "Galería Derecha - Testimonios de clientes"
+  },
+  "generalSection": {
+    "title": "Sección General",
+    "content": "Esta es una sección general que puede contener información adicional, noticias, o cualquier otro contenido relevante para el sitio web."
+  },
+  "footer": {
+    "leftContent": "© 2024 Mi Empresa. Todos los derechos reservados.",
+    "rightContent": "Síguenos en redes sociales | Política de privacidad"
+  }
+}

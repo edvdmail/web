@@ -1,0 +1,122 @@
+{
+  "header": {
+    "topLeft": "TechServices",
+    "topMiddle": "Soluciones tecnológicas profesionales",
+    "topRight": "Consultas: +1234567890"
+  },
+  "navigation": {
+    "items": [
+      { "label": "Inicio", "href": "/" },
+      { "label": "Productos", "href": "/productos" },
+      { "label": "Servicios", "href": "/servicios" },
+      { "label": "Acerca de", "href": "/acerca" },
+      { "label": "Contacto", "href": "/contacto" }
+    ]
+  },
+  "serviceHero": {
+    "title": "Servicios Profesionales de TI",
+    "subtitle": "Transformamos tu negocio con soluciones tecnológicas innovadoras",
+    "ctaText": "Solicitar Consulta Gratuita",
+    "backgroundImage": "/placeholder.svg?height=400&width=1200"
+  },
+  "servicesList": {
+    "title": "Nuestros Servicios",
+    "services": [
+      {
+        "id": "1",
+        "name": "Desarrollo Web",
+        "description": "Creamos sitios web modernos y responsivos",
+        "icon": "🌐",
+        "price": "Desde $2,500",
+        "features": ["Diseño responsivo", "SEO optimizado", "Panel de administración", "Soporte técnico"]
+      },
+      {
+        "id": "2",
+        "name": "Consultoría IT",
+        "description": "Asesoramiento tecnológico especializado",
+        "icon": "💼",
+        "price": "Desde $150/hora",
+        "features": [
+          "Análisis de infraestructura",
+          "Optimización de procesos",
+          "Seguridad informática",
+          "Migración a la nube"
+        ]
+      },
+      {
+        "id": "3",
+        "name": "Soporte Técnico",
+        "description": "Mantenimiento y soporte continuo",
+        "icon": "🔧",
+        "price": "Desde $99/mes",
+        "features": ["Soporte 24/7", "Mantenimiento preventivo", "Actualizaciones automáticas", "Monitoreo remoto"]
+      }
+    ]
+  },
+  "workProcess": {
+    "title": "Nuestro Proceso de Trabajo",
+    "subtitle": "Metodología probada para garantizar el éxito de tu proyecto",
+    "steps": [
+      {
+        "stepNumber": 1,
+        "title": "Análisis y Consulta",
+        "description": "Evaluamos tus necesidades y objetivos específicos",
+        "icon": "🔍"
+      },
+      {
+        "stepNumber": 2,
+        "title": "Planificación",
+        "description": "Diseñamos una estrategia personalizada para tu proyecto",
+        "icon": "📋"
+      },
+      {
+        "stepNumber": 3,
+        "title": "Desarrollo",
+        "description": "Implementamos la solución con las mejores prácticas",
+        "icon": "⚙️"
+      },
+      {
+        "stepNumber": 4,
+        "title": "Entrega y Soporte",
+        "description": "Entregamos el proyecto y brindamos soporte continuo",
+        "icon": "🚀"
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Lo que dicen nuestros clientes",
+    "reviews": [
+      {
+        "id": "1",
+        "name": "María González",
+        "company": "Empresa ABC",
+        "rating": 5,
+        "comment": "Excelente servicio, superaron nuestras expectativas en tiempo y calidad.",
+        "avatar": "/placeholder.svg?height=60&width=60"
+      },
+      {
+        "id": "2",
+        "name": "Carlos Rodríguez",
+        "company": "StartupXYZ",
+        "rating": 5,
+        "comment": "Profesionales altamente capacitados, recomiendo sus servicios sin dudarlo.",
+        "avatar": "/placeholder.svg?height=60&width=60"
+      }
+    ]
+  },
+  "callToAction": {
+    "title": "¿Listo para transformar tu negocio?",
+    "subtitle": "Contáctanos hoy y descubre cómo podemos ayudarte a alcanzar tus objetivos tecnológicos",
+    "buttonText": "Contactar Ahora",
+    "buttonLink": "/contacto",
+    "backgroundColor": "bg-blue-600"
+  },
+  "generalSection": {
+    "title": "Compromiso con la Excelencia",
+    "content": "En TechServices nos dedicamos a brindar soluciones tecnológicas de vanguardia que impulsen el crecimiento de tu negocio. Nuestro equipo de expertos está comprometido con la calidad y la innovación."
+  },
+  "footer": {
+    "leftContent": "© 2024 TechServices. Todos los derechos reservados.",
+    "rightContent": "Síguenos en LinkedIn | Política de privacidad"
+  }
+}

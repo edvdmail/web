@@ -1,0 +1,130 @@
+{
+  "header": {
+    "topLeft": "TechCompany",
+    "topMiddle": "Estamos aquí para ayudarte",
+    "topRight": "Respuesta en 24h"
+  },
+  "navigation": {
+    "items": [
+      { "label": "Inicio", "href": "/" },
+      { "label": "Productos", "href": "/productos" },
+      { "label": "Servicios", "href": "/servicios" },
+      { "label": "Acerca de", "href": "/acerca" },
+      { "label": "Contacto", "href": "/contacto" }
+    ]
+  },
+  "contactHero": {
+    "title": "Contáctanos",
+    "subtitle": "Estamos listos para ayudarte con tus proyectos tecnológicos",
+    "backgroundImage": "/placeholder.svg?height=400&width=1200"
+  },
+  "contactForm": {
+    "title": "Envíanos un mensaje",
+    "subtitle": "Completa el formulario y nos pondremos en contacto contigo pronto",
+    "fields": [
+      {
+        "name": "name",
+        "label": "Nombre completo",
+        "type": "text",
+        "required": true,
+        "placeholder": "Tu nombre completo"
+      },
+      {
+        "name": "email",
+        "label": "Correo electrónico",
+        "type": "email",
+        "required": true,
+        "placeholder": "tu@email.com"
+      },
+      {
+        "name": "phone",
+        "label": "Teléfono",
+        "type": "tel",
+        "required": false,
+        "placeholder": "+1 (555) 123-4567"
+      },
+      {
+        "name": "company",
+        "label": "Empresa",
+        "type": "text",
+        "required": false,
+        "placeholder": "Nombre de tu empresa"
+      },
+      {
+        "name": "subject",
+        "label": "Asunto",
+        "type": "text",
+        "required": true,
+        "placeholder": "¿En qué podemos ayudarte?"
+      },
+      {
+        "name": "message",
+        "label": "Mensaje",
+        "type": "textarea",
+        "required": true,
+        "placeholder": "Cuéntanos más detalles sobre tu proyecto o consulta..."
+      }
+    ],
+    "submitText": "Enviar Mensaje"
+  },
+  "contactInfo": {
+    "title": "Información de Contacto",
+    "items": [
+      {
+        "icon": "📍",
+        "label": "Dirección",
+        "value": "123 Tech Street, Ciudad Tecnológica, TC 12345"
+      },
+      {
+        "icon": "📞",
+        "label": "Teléfono",
+        "value": "+1 (555) 123-4567",
+        "link": "tel:+15551234567"
+      },
+      {
+        "icon": "✉️",
+        "label": "Email",
+        "value": "contacto@techcompany.com",
+        "link": "mailto:contacto@techcompany.com"
+      },
+      {
+        "icon": "🕒",
+        "label": "Horario",
+        "value": "Lun - Vie: 9:00 AM - 6:00 PM"
+      }
+    ]
+  },
+  "mapSection": {
+    "title": "Nuestra Ubicación",
+    "address": "123 Tech Street, Ciudad Tecnológica, TC 12345"
+  },
+  "faq": {
+    "title": "Preguntas Frecuentes",
+    "questions": [
+      {
+        "question": "¿Cuál es el tiempo de respuesta típico?",
+        "answer": "Nos comprometemos a responder todas las consultas dentro de las 24 horas hábiles."
+      },
+      {
+        "question": "¿Ofrecen consultas gratuitas?",
+        "answer": "Sí, ofrecemos una consulta inicial gratuita de 30 minutos para evaluar tu proyecto."
+      },
+      {
+        "question": "¿Trabajan con empresas de todos los tamaños?",
+        "answer": "Absolutamente. Trabajamos con startups, PYMES y grandes corporaciones, adaptando nuestros servicios a cada necesidad."
+      },
+      {
+        "question": "¿Qué métodos de pago aceptan?",
+        "answer": "Aceptamos transferencias bancarias, tarjetas de crédito y débito, y pagos a través de PayPal."
+      }
+    ]
+  },
+  "generalSection": {
+    "title": "Comprometidos con tu Éxito",
+    "content": "En TechCompany, cada proyecto es una oportunidad para crear soluciones innovadoras que impulsen el crecimiento de nuestros clientes. Nuestro equipo está listo para convertir tus ideas en realidad."
+  },
+  "footer": {
+    "leftContent": "© 2024 TechCompany. Todos los derechos reservados.",
+    "rightContent": "Síguenos en redes sociales | Política de privacidad"
+  }
+}

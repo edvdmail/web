@@ -1,0 +1,132 @@
+{
+  "header": {
+    "topLeft": "TechCompany",
+    "topMiddle": "Innovación y excelencia desde 2015",
+    "topRight": "9 años de experiencia"
+  },
+  "navigation": {
+    "items": [
+      { "label": "Inicio", "href": "/" },
+      { "label": "Productos", "href": "/productos" },
+      { "label": "Servicios", "href": "/servicios" },
+      { "label": "Acerca de", "href": "/acerca" },
+      { "label": "Contacto", "href": "/contacto" }
+    ]
+  },
+  "aboutHero": {
+    "title": "Acerca de Nosotros",
+    "subtitle": "Transformando ideas en soluciones tecnológicas innovadoras desde 2015",
+    "backgroundImage": "/placeholder.svg?height=400&width=1200"
+  },
+  "companyStory": {
+    "title": "Nuestra Historia",
+    "content": "TechCompany nació en 2015 con la visión de democratizar la tecnología y hacer que las soluciones digitales sean accesibles para empresas de todos los tamaños. Lo que comenzó como un pequeño equipo de desarrolladores apasionados, se ha convertido en una empresa líder en soluciones tecnológicas, sirviendo a más de 500 clientes en todo el mundo. Nuestra pasión por la innovación y el compromiso con la excelencia nos han permitido crecer constantemente, adaptándonos a las nuevas tecnologías y tendencias del mercado.",
+    "foundedYear": 2015,
+    "image": "/placeholder.svg?height=400&width=600"
+  },
+  "missionVision": {
+    "mission": {
+      "title": "Nuestra Misión",
+      "content": "Empoderar a las empresas con soluciones tecnológicas innovadoras que impulsen su crecimiento, mejoren su eficiencia y les permitan alcanzar sus objetivos estratégicos en la era digital.",
+      "icon": "🎯"
+    },
+    "vision": {
+      "title": "Nuestra Visión",
+      "content": "Ser la empresa de tecnología más confiable y reconocida, liderando la transformación digital de las organizaciones a nivel global con soluciones que marquen la diferencia.",
+      "icon": "🚀"
+    },
+    "values": {
+      "title": "Nuestros Valores",
+      "items": [
+        {
+          "name": "Innovación",
+          "description": "Buscamos constantemente nuevas formas de resolver problemas y mejorar procesos",
+          "icon": "💡"
+        },
+        {
+          "name": "Excelencia",
+          "description": "Nos comprometemos a entregar la más alta calidad en cada proyecto",
+          "icon": "⭐"
+        },
+        {
+          "name": "Integridad",
+          "description": "Actuamos con honestidad y transparencia en todas nuestras relaciones",
+          "icon": "🤝"
+        },
+        {
+          "name": "Colaboración",
+          "description": "Trabajamos en equipo para lograr resultados excepcionales",
+          "icon": "👥"
+        }
+      ]
+    }
+  },
+  "team": {
+    "title": "Nuestro Equipo",
+    "subtitle": "Conoce a los profesionales que hacen posible nuestro éxito",
+    "members": [
+      {
+        "name": "Ana García",
+        "position": "CEO & Fundadora",
+        "bio": "Con más de 15 años de experiencia en tecnología, Ana lidera la visión estratégica de la empresa.",
+        "image": "/placeholder.svg?height=300&width=300",
+        "social": {
+          "linkedin": "https://linkedin.com/in/ana-garcia",
+          "email": "ana@techcompany.com"
+        }
+      },
+      {
+        "name": "Carlos Rodríguez",
+        "position": "CTO",
+        "bio": "Experto en arquitectura de software y líder técnico con pasión por las nuevas tecnologías.",
+        "image": "/placeholder.svg?height=300&width=300",
+        "social": {
+          "linkedin": "https://linkedin.com/in/carlos-rodriguez",
+          "twitter": "https://twitter.com/carlos_tech"
+        }
+      },
+      {
+        "name": "María López",
+        "position": "Directora de Diseño",
+        "bio": "Especialista en UX/UI con un enfoque centrado en el usuario y la experiencia digital.",
+        "image": "/placeholder.svg?height=300&width=300",
+        "social": {
+          "linkedin": "https://linkedin.com/in/maria-lopez"
+        }
+      }
+    ]
+  },
+  "achievements": {
+    "title": "Nuestros Logros",
+    "stats": [
+      {
+        "number": "500+",
+        "label": "Clientes Satisfechos",
+        "description": "Empresas que confían en nuestras soluciones"
+      },
+      {
+        "number": "1000+",
+        "label": "Proyectos Completados",
+        "description": "Soluciones entregadas exitosamente"
+      },
+      {
+        "number": "50+",
+        "label": "Profesionales",
+        "description": "Expertos dedicados a tu éxito"
+      },
+      {
+        "number": "9",
+        "label": "Años de Experiencia",
+        "description": "Creciendo y evolucionando constantemente"
+      }
+    ]
+  },
+  "generalSection": {
+    "title": "Nuestro Compromiso",
+    "content": "En TechCompany, no solo desarrollamos software, construimos relaciones duraderas con nuestros clientes. Cada proyecto es una oportunidad para demostrar nuestro compromiso con la excelencia y la innovación."
+  },
+  "footer": {
+    "leftContent": "© 2024 TechCompany. Todos los derechos reservados.",
+    "rightContent": "Síguenos en redes sociales | Únete a nuestro equipo"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "header": {
+    "topLeft": "TechCompany",
+    "topMiddle": "Soluciones tecnológicas innovadoras",
+    "topRight": "Soporte 24/7: +1234567890",
+    "logo": "/placeholder.svg?height=48&width=48",
+    "companyName": "TechCompany"
+  },
+  "navigation": {
+    "items": [
+      { "label": "Inicio", "href": "/" },
+      { "label": "Productos", "href": "/productos" },
+      { "label": "Servicios", "href": "/servicios" },
+      { "label": "Acerca de", "href": "/acerca" },
+      { "label": "Contacto", "href": "/contacto" }
+    ]
+  },
+  "generalSection": {
+    "title": "Comprometidos con tu Éxito",
+    "content": "En TechCompany, cada proyecto es una oportunidad para crear soluciones innovadoras que impulsen el crecimiento de nuestros clientes. Nuestro equipo está listo para convertir tus ideas en realidad."
+  },
+  "footer": {
+    "leftContent": "© 2024 TechCompany. Todos los derechos reservados.",
+    "rightContent": "Síguenos en redes sociales | Política de privacidad"
+  }
+}
