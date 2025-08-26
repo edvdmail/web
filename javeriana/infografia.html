@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IA en Ciberseguridad - Infografía</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="2" fill="rgba(255,255,255,0.1)"/></svg>') repeat;
+            animation: float 20s linear infinite;
+        }
+        
+        @keyframes float {
+            0% { transform: translate(-50%, -50%) rotate(0deg); }
+            100% { transform: translate(-50%, -50%) rotate(360deg); }
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .content {
+            padding: 40px 30px;
+        }
+        
+        .intro-section {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 15px;
+        }
+        
+        .intro-section h2 {
+            color: #2c3e50;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+        
+        /* SECCIÓN CONSOLIDADA DE ESTADÍSTICAS */
+        .consolidated-stats {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            margin: 40px 0;
+        }
+        
+        .stats-category {
+            margin-bottom: 40px;
+        }
+        
+        .stats-category:last-child {
+            margin-bottom: 0;
+        }
+        
+        .stats-category h3 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            text-align: center;
+            border-bottom: 2px solid rgba(255,255,255,0.3);
+            padding-bottom: 10px;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        
+        .stat-card {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+            transform: translateY(0);
+            transition: transform 0.3s ease;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.2);
+        }
+        
+        .stat-number {
+            font-size: 2.5em;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+        
+        .stat-description {
+            font-size: 0.9em;
+            opacity: 0.9;
+            line-height: 1.4;
+        }
+        
+        .frameworks-section {
+            margin: 40px 0;
+        }
+        
+        .framework-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .framework-card {
+            border: 2px solid #e9ecef;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: border-color 0.3s ease, transform 0.3s ease;
+        }
+        
+        .framework-card:hover {
+            border-color: #3498db;
+            transform: translateY(-3px);
+        }
+        
+        .framework-header {
+            padding: 20px;
+            font-weight: bold;
+            color: white;
+        }
+        
+        .nist-header {
+            background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+        }
+        
+        .mitre-header {
+            background: linear-gradient(135deg, #f39c12 0%, #d35400 100%);
+        }
+        
+        .framework-content {
+            padding: 25px;
+        }
+        
+        .ai-applications {
+            margin: 40px 0;
+        }
+        
+        .applications-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .app-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-left: 5px solid;
+        }
+        
+        .app-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+        
+        .detect { border-left-color: #e74c3c; }
+        .prevent { border-left-color: #27ae60; }
+        .respond { border-left-color: #3498db; }
+        .recover { border-left-color: #f39c12; }
+        
+        .benefits-section {
+            background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            margin: 40px 0;
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        
+        .benefit-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .challenges-section {
+            background: linear-gradient(135deg, #fd79a8 0%, #e84393 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            margin: 40px 0;
+        }
+        
+        .challenge-card {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            backdrop-filter: blur(10px);
+            border-left: 4px solid #fff;
+        }
+        
+        .section-title {
+            font-size: 2em;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .section-title.white {
+            color: white;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(135deg, #3498db 0%, #e74c3c 100%);
+            border-radius: 2px;
+        }
+        
+        .section-title.white::after {
+            background: rgba(255, 255, 255, 0.5);
+        }
+        
+        .icon {
+            font-size: 2em;
+            margin-bottom: 15px;
+            display: block;
+        }
+        
+        .footer {
+            background: #2c3e50;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-bottom: 20px;
+        }
+        
+        .footer-section h3 {
+            margin-bottom: 15px;
+            color: #3498db;
+        }
+        
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .framework-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .applications-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .content {
+                padding: 20px 15px;
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🤖 IA en Ciberseguridad</h1>
+            <p>Transformando la protección digital con inteligencia artificial</p>
+        </div>
+        
+        <div class="content">
+            <div class="intro-section">
+                <h2>La IA revoluciona la ciberseguridad</h2>
+                <p>La inteligencia artificial está transformando cómo detectamos, prevenimos y respondemos a las amenazas cibernéticas, proporcionando capacidades avanzadas de análisis y respuesta en tiempo real.</p>
+                <p style="margin-top:15px; color:#555;">
+                    Además de acelerar la detección y respuesta, la IA requiere profesionales con fluidez en su uso: habilidades técnicas, pensamiento crítico y responsabilidad ética, como propone el marco <strong>CAI Fluency</strong>.
+                </p>
+            </div>
+            
+            <!-- SECCIÓN CONSOLIDADA DE TODAS LAS ESTADÍSTICAS -->
+            <div class="consolidated-stats">
+                <h2 class="section-title white">📊 Estadísticas e Impacto de la IA</h2>
+                
+                <div class="stats-category">
+                    <h3>⚡ Velocidad y Eficiencia</h3>
+                    <div class="stats-grid">
+                        <div class="stat-card pulse">
+                            <span class="stat-number">95%</span>
+                            <span class="stat-description">Reducción en tiempo de detección de amenazas</span>
+                        </div>
+                        <div class="stat-card pulse">
+                            <span class="stat-number">200x</span>
+                            <span class="stat-description">Más rápida detección de malware vs. métodos tradicionales</span>
+                        </div>
+                        <div class="stat-card pulse">
+                            <span class="stat-number">3 min</span>
+                            <span class="stat-description">Tiempo promedio de respuesta automatizada</span>
+                        </div>
+                        <div class="stat-card pulse">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-description">Monitoreo automatizado sin interrupciones</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="stats-category">
+                    <h3>🎯 Precisión y Calidad</h3>
+                    <div class="stats-grid">
+                        <div class="stat-card pulse">
+                            <span class="stat-number">80%</span>
+                            <span class="stat-description">Mejora en precisión de alertas de seguridad</span>
+                        </div>
+                        <div class="stat-card pulse">
+                            <span class="stat-number">65%</span>
+                            <span class="stat-description">Reducción de falsos positivos</span>
+                        </div>
+                        <div class="stat-card pulse">
+                            <span class="stat-number">99.9%</span>
+                            <span class="stat-description">Disponibilidad de sistemas críticos</span>
+                        </div>
+                        <div class="stat-card pulse">
+                            <span class="stat-number">85%</span>
+                            <span class="stat-description">Mejora en productividad del SOC</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="stats-category">
+                    <h3>💰 Impacto Económico</h3>
+                    <div class="stats-grid">
+                        <div class="stat-card pulse">
+                            <span class="stat-number">$2.9M</span>
+                            <span class="stat-description">Ahorro promedio por brecha de seguridad evitada</span>
+                        </div>
+                        <div class="stat-card pulse">
+                            <span class="stat-number">40%</span>
+                            <span class="stat-description">Reducción de costos operativos de seguridad</span>
+                        </div>
+                        <div class="stat-card pulse">
+                            <span class="stat-number">ROI 300%</span>
+                            <span class="stat-description">Retorno de inversión típico en soluciones de IA</span>
+                        </div>
+                        <div class="stat-card pulse">
+                            <span class="stat-number">70%</span>
+                            <span class="stat-description">Reducción en costos de investigación de incidentes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="frameworks-section">
+                <h2 class="section-title">Marcos de Referencia</h2>
+                
+                <div class="framework-grid">
+                    <div class="framework-card">
+                        <div class="framework-header nist-header">
+                            <span class="icon">🛡️</span>
+                            <h3>NIST Cybersecurity Framework</h3>
+                        </div>
+                        <div class="framework-content">
+                            <h4>Funciones Core potenciadas por IA:</h4>
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li><strong>🔍 IDENTIFICAR:</strong> Inventario automatizado de activos y análisis de riesgos basado en ML</li>
+                                <li><strong>🛡️ PROTEGER:</strong> Sistemas de autenticación adaptativa y control de acceso inteligente</li>
+                                <li><strong>🔎 DETECTAR:</strong> Análisis de comportamiento anómalo y detección de amenazas en tiempo real</li>
+                                <li><strong>🚨 RESPONDER:</strong> Orquestación automática de respuestas y contención de incidentes</li>
+                                <li><strong>🔄 RECUPERAR:</strong> Recuperación inteligente y análisis post-incidente</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="framework-card">
+                        <div class="framework-header mitre-header">
+                            <span class="icon">⚔️</span>
+                            <h3>MITRE ATT&CK Framework</h3>
+                        </div>
+                        <div class="framework-content">
+                            <h4>Mejoras con IA en TTPs:</h4>
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li><strong>📊 Análisis Predictivo:</strong> Predicción de próximas tácticas del atacante</li>
+                                <li><strong>🎯 Threat Hunting:</strong> Búsqueda proactiva basada en patrones de ATT&CK</li>
+                                <li><strong>🔗 Correlación:</strong> Mapeo automático de actividades maliciosas a técnicas</li>
+                                <li><strong>📈 Intelligence:</strong> Enriquecimiento de CTI con patrones de comportamiento</li>
+                                <li><strong>🎪 Purple Team:</strong> Simulaciones automatizadas para testing de controles</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="ai-applications">
+                <h2 class="section-title">Aplicaciones de IA en Ciberseguridad</h2>
+                
+                <div class="applications-grid">
+                    <div class="app-card detect">
+                        <span class="icon">🔍</span>
+                        <h3>Detección Avanzada</h3>
+                        <ul>
+                            <li>Machine Learning para análisis de malware</li>
+                            <li>Detección de anomalías de comportamiento</li>
+                            <li>Análisis de tráfico de red con deep learning</li>
+                            <li>Identificación de amenazas zero-day</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="app-card prevent">
+                        <span class="icon">🛡️</span>
+                        <h3>Prevención Inteligente</h3>
+                        <ul>
+                            <li>Filtros anti-phishing adaptativos</li>
+                            <li>Control de acceso basado en riesgo</li>
+                            <li>Autenticación multifactor inteligente</li>
+                            <li>Prevención de exfiltración de datos</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="app-card respond">
+                        <span class="icon">⚡</span>
+                        <h3>Respuesta Automatizada</h3>
+                        <ul>
+                            <li>SOAR con capacidades de IA</li>
+                            <li>Análisis automático de incidentes</li>
+                            <li>Contención inteligente de amenazas</li>
+                            <li>Generación de reportes automáticos</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="app-card recover">
+                        <span class="icon">🔄</span>
+                        <h3>Recuperación Inteligente</h3>
+                        <ul>
+                            <li>Análisis forense automatizado</li>
+                            <li>Priorización de recuperación</li>
+                            <li>Lecciones aprendidas con ML</li>
+                            <li>Mejora continua de controles</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECCIÓN CAI FLUENCY -->
+            <div class="ai-fluency-section">
+                <h2 class="section-title">Fluidez en IA para Ciberseguridad (CAI Fluency)</h2>
+                <p style="text-align:center; margin-bottom:20px;">
+                    Para aprovechar plenamente la IA, los profesionales necesitan más que herramientas: requieren competencias estratégicas y éticas.
+                </p>
+                <div class="applications-grid">
+                    <div class="app-card detect">
+                        <span class="icon">⚙️</span>
+                        <h3>Modalidades</h3>
+                        <ul>
+                            <li><strong>Automatización (L0–L2):</strong> IA ejecuta tareas definidas por humanos</li>
+                            <li><strong>Aumento (L2–L4):</strong> Colaboración dinámica Humano–IA</li>
+                            <li><strong>Agencia (L4–L5):</strong> IA opera autónomamente bajo supervisión estratégica</li>
+                        </ul>
+                    </div>
+                    <div class="app-card prevent">
+                        <span class="icon">🎓</span>
+                        <h3>Competencias (4 C's)</h3>
+                        <ul>
+                            <li><strong>Command:</strong> Despliegue estratégico de IA</li>
+                            <li><strong>Communication:</strong> Definir tareas y requerimientos claros</li>
+                            <li><strong>Critique:</strong> Evaluar resultados de la IA con ojo crítico</li>
+                            <li><strong>Custody:</strong> Uso ético y responsable de la IA</li>
+                        </ul>
+                    </div>
+                    <div class="app-card respond">
+                        <span class="icon">📈</span>
+                        <h3>Niveles de Automatización (0-5)</h3>
+                        <ul>
+                            <li><strong>0:</strong> Manual, sin IA</li>
+                            <li><strong>2:</strong> Escaneo y análisis parcial con IA</li>
+                            <li><strong>3:</strong> Flujos semi-automatizados</li>
+                            <li><strong>4:</strong> Operaciones autónomas supervisadas</li>
+                            <li><strong>5:</strong> Autonomía completa (aspiracional)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIESGOS Y DESAFÍOS -->
+            <div class="challenges-section">
+                <h2 class="section-title white">Riesgos y Desafíos de la IA</h2>
+                <p style="text-align:center; margin-bottom:30px;">
+                    La adopción de IA también introduce nuevos vectores de riesgo que deben ser gestionados proactivamente.
+                </p>
+                
+                <div class="challenge-card">
+                    <h4>⚠️ IA Adversarial</h4>
+                    <p>Los atacantes pueden usar IA para evadir sistemas de detección basados en ML y generar ataques más sofisticados.</p>
+                </div>
+                
+                <div class="challenge-card">
+                    <h4>🎯 Sesgos Algorítmicos</h4>
+                    <p>Los modelos de ML pueden heredar sesgos de los datos de entrenamiento, llevando a decisiones incorrectas o discriminatorias.</p>
+                </div>
+                
+                <div class="challenge-card">
+                    <h4>🔒 Dependencia Tecnológica</h4>
+                    <p>La sobre-dependencia de sistemas automatizados puede crear puntos únicos de falla y erosionar habilidades humanas críticas.</p>
+                </div>
+                
+                <div class="challenge-card">
+                    <h4>📊 Calidad de Datos</h4>
+                    <p>La efectividad de la IA depende críticamente de datos limpios, completos y representativos.</p>
+                </div>
+                
+                <div class="challenge-card">
+                    <h4>⚖️ Responsabilidad Legal</h4>
+                    <p>Determinar responsabilidad cuando sistemas autónomos toman decisiones críticas de seguridad sigue siendo complejo.</p>
+                </div>
+            </div>
+            
+            <div class="benefits-section">
+                <h2 class="section-title white">Beneficios Clave de la IA</h2>
+                
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <span class="icon">⚡</span>
+                        <h3>Velocidad</h3>
+                        <p>Procesamiento de amenazas en milisegundos vs. horas de análisis manual</p>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <span class="icon">📊</span>
+                        <h3>Escala</h3>
+                        <p>Análisis simultáneo de millones de eventos y logs de seguridad</p>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <span class="icon">🎯</span>
+                        <h3>Precisión</h3>
+                        <p>Reducción significativa de falsos positivos mediante aprendizaje continuo</p>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <span class="icon">🔮</span>
+                        <h3>Predictiva</h3>
+                        <p>Anticipación de amenazas basada en patrones históricos y tendencias</p>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <span class="icon">🧠</span>
+                        <h3>Adaptabilidad</h3>
+                        <p>Evolución constante ante nuevas amenazas y vectores de ataque</p>
+                    </div>
+                    
+                    <div class="benefit-item">
+                        <span class="icon">🤝</span>
+                        <h3>Colaboración Humano-IA</h3>
+                        <p>Mejora de la toma de decisiones con soporte inteligente</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>📚 Fuentes de Información</h3>
+                    <p><strong>• NIST Cybersecurity Framework</strong></p>
+                    <p><strong>• MITRE ATT&CK Framework</strong></p>
+                    <p><strong>• CAI Fluency Framework (Alias Robotics, 2025)</strong></p>
+                    <p><strong>• IBM Security Cost of Data Breach Report 2024</strong></p>
+                </div>
+                <div class="footer-section">
+                    <h3>🔗 Recursos Adicionales</h3>
+                    <p>https://www.nist.gov/cyberframework</p>
+                    <p>https://attack.mitre.org</p>
+                    <p>https://aliasrobotics.com/cai-fluency</p>
+                    <p>https://www.ibm.com/security/data-breach</p>
+                </div>
+            </div>
+            <p>&copy; 2025 Infografía: Impacto de la IA en Ciberseguridad - Cifras Consolidadas</p>
+        </div>
+    </div>
+</body>
+</html>
